@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2018-12-30" view-index="0" gantt-divider-location="323" resource-divider-location="300" version="2.8.10" locale="en_US">
+    <description/>
+    <view zooming-state="default:6" id="gantt-chart">
+        <field id="tpd3" name="Name" width="160" order="0"/>
+        <field id="tpd4" name="Begin date" width="71" order="1"/>
+        <field id="tpd5" name="End date" width="70" order="2"/>
+        <option id="taskLabelUp" value="name"/>
+        <option id="taskLabelDown" value="taskDates"/>
+        <option id="taskLabelLeft" value="length"/>
+        <option id="taskLabelRight" value="advancement"/>
+        <timeline><![CDATA[15,14]]></timeline>
+        <option id="color.recent"><![CDATA[#ff0033 #009900 #ff33ff #ff9900 #ff00ff #0099ff]]></option>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Name" width="209" order="0"/>
+        <field id="1" name="Default role" width="86" order="1"/>
+    </view>
+    <!-- -->
+    <calendars>
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="1" mon="0" tue="0" wed="0" thu="0" fri="0" sat="1"/>
+            <only-show-weekends value="false"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="0" name="Analiză Proiect" color="#0099ff" meeting="false" start="2019-01-07" duration="5" complete="100" thirdDate="2019-06-18" thirdDate-constraint="0" expand="true">
+            <task id="13" name="Definire arie de specificatii" color="#8cb6ce" shape="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0" meeting="false" start="2019-01-07" duration="3" complete="100" thirdDate="2019-01-11" thirdDate-constraint="0" expand="true">
+                <notes><![CDATA[Beneficiarii aplicatiei:
+ - psihoterapeut
+ - clienti / consiliati
+Alegerea Interfetei grafice (webapp template)
+Stabilirea schemei bazei de date (MySQL)
+Interfetele pentru introducere date
+ - formulare HTML prelucrate cu PHP
+ - prelucrarea acestora (jquery validator + PHP) 
+Analiza modului in care sunt extrase datele si afisate:
+ - pentru psihoterapeut
+ - pentru client / consiliat
+Alegerea librariei pentru generarea diagramelor (Chart.JS)
+]]></notes>
+            </task>
+            <task id="14" name="Invatare Chart.JS" color="#8cb6ce" meeting="false" start="2019-01-10" duration="2" complete="100" thirdDate="2019-01-04" thirdDate-constraint="0" expand="true"/>
+        </task>
+        <task id="15" name="Activitate GUI" color="#ff00ff" meeting="false" start="2019-01-14" duration="8" complete="100" thirdDate="2019-01-03" thirdDate-constraint="0" expand="true">
+            <task id="25" name="Adaptarea template-ului HTML" color="#ff00ff" meeting="false" start="2019-01-14" duration="5" complete="100" thirdDate="2019-01-03" thirdDate-constraint="0" priority="2" expand="true">
+                <notes><![CDATA[Pagini
+ - Home
+ - Administrare
+ - Users
+Formulare
+ - Chestionare
+ - Jurnalizare activitati user / consiliat]]></notes>
+            </task>
+            <task id="26" name="Creare Baza de Date" color="#ff00ff" meeting="false" start="2019-01-21" duration="3" complete="100" thirdDate="2019-01-03" thirdDate-constraint="0" expand="true">
+                <notes><![CDATA[Configurare Schema DB MySQL
+ - tabele si coloane (caracteristici)
+ - tipurile atributelor si relatiile dintre tabele
+ - introducere date brute]]></notes>
+            </task>
+        </task>
+        <task id="31" name="Scripting / MySQL" color="#ff9900" meeting="false" start="2019-01-24" duration="12" complete="100" thirdDate="2019-01-24" thirdDate-constraint="0" expand="true">
+            <task id="33" name="Create php includes, navigations, template pages" color="#ff9900" meeting="false" start="2019-01-24" duration="4" complete="100" thirdDate="2019-01-07" thirdDate-constraint="0" expand="true">
+                <notes><![CDATA[- Separate blocks of HTML code
+- Create php template pages
+- create URI navigation]]></notes>
+            </task>
+            <task id="41" name="Data Insert Interfaces" color="#ff9900" meeting="false" start="2019-01-30" duration="8" complete="100" thirdDate="2019-01-07" thirdDate-constraint="0" expand="true">
+                <notes><![CDATA[- Creat interfetele pentru introducerea in baza de date a:
+   - consiliatilor / userilor
+   - completare chestionar si insert in baza de date a rezultatelor
+   - interfata inserare monitorizare activitate tema de casa]]></notes>
+            </task>
+        </task>
+        <task id="38" name="Result Data: Scripts and Bussines Logic" color="#009900" meeting="false" start="2019-02-11" duration="10" complete="100" thirdDate="2019-01-07" thirdDate-constraint="0" expand="true">
+            <task id="39" name="Pages for results" color="#009900" meeting="false" start="2019-02-11" duration="6" complete="100" thirdDate="2019-01-07" thirdDate-constraint="0" expand="true">
+                <notes><![CDATA[- Chestionar
+- Tema de Casa]]></notes>
+            </task>
+            <task id="57" name="Computation and Testing" color="#009900" meeting="false" start="2019-02-13" duration="8" complete="100" thirdDate="2019-01-07" thirdDate-constraint="0" expand="true">
+                <notes><![CDATA[- PHP scripts to extract data from MySQL and computation (percentage, addition);
+- Chart.JS for data representation]]></notes>
+            </task>
+        </task>
+        <task id="65" name="Fix-Retest-Delivering" color="#ff0033" meeting="false" start="2019-02-25" duration="11" complete="100" thirdDate="2019-01-21" thirdDate-constraint="0" expand="true">
+            <task id="67" name="Fix Problems" color="#ff0033" meeting="false" start="2019-02-25" duration="5" complete="100" thirdDate="2019-01-07" thirdDate-constraint="0" expand="true">
+                <notes><![CDATA[- Fix all computation
+- Fix graphic data result]]></notes>
+            </task>
+            <task id="70" name="Re-Test :: Re-Fix" color="#ff0033" meeting="false" start="2019-03-04" duration="5" complete="100" thirdDate="2019-01-28" thirdDate-constraint="0" expand="true">
+                <notes><![CDATA[- Check al fixes
+- Make tests]]></notes>
+            </task>
+            <task id="74" name="Delivering" color="#ff0033" meeting="false" start="2019-03-11" duration="1" complete="100" thirdDate="2019-01-28" thirdDate-constraint="0" expand="true">
+                <notes><![CDATA[- Finally... delivering.]]></notes>
+            </task>
+        </task>
+    </tasks>
+    <resources/>
+    <allocations/>
+    <vacations/>
+    <previous/>
+    <roles roleset-name="Default"/>
+</project>

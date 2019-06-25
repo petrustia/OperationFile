@@ -1,0 +1,464 @@
+<html xmlns:ganttproject="http://ganttproject.sf.net/">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>GanttProject - ProgramareActivitati</title>
+<style>
+	    A:link {
+		FONT-WEIGHT: bold;  TEXT-DECORATION: none;
+		FONT-SIZE: 14px ; COLOR: black;
+	    }
+	    A:visited {
+		FONT-WEIGHT: bold;  TEXT-DECORATION: none;
+		FONT-SIZE: 14px ; COLOR: black; BACKGROUND: none
+	    }
+	    A:hover {
+		FONT-WEIGHT: bold;  TEXT-DECORATION: none;
+		FONT-SIZE: 14px ; COLOR: white ; BACKGROUND: #6d9ec6;
+	    }
+	    .notes {
+	      padding-left: 10px;
+	    }
+	    .notes pre {
+	      font-family: Arial, Helvetica;
+	      font-size: 10px;
+	      margin-top: 0px;
+	      padding-top: 0px;
+	      margin-bottom: 5px;
+	    }
+	    .attachment {
+	      padding-left: 10px;
+	    }
+	    .attachment a:link {
+	      font-weight: normal;
+	      font-size: 12px;
+	      color: #6d9ec6;
+	      background: white;
+	    }
+	    .attachment a:hover {
+	      font-weight: normal;
+	      text-decoration: underline;
+	      font-size: 12px;
+	      color: #6d9ec6;
+	      background: white;
+	    }
+	    .attachment a:visited {
+	      font-weight: normal;
+	      font-size: 12px;
+	      background: white;
+	      color: gray;
+	    }
+	    TD {
+		FONT-SIZE: 12px; COLOR: black; FONT-STYLE: normal; FONT-FAMILY: Arial, Helvetica, Geneva, sans-serif
+	    }
+	    UL {
+		FONT-SIZE: 12px; FONT-FAMILY: Arial, Helvetica, Geneva, sans-serif
+	    }
+	    LI {
+		FONT-SIZE: 12px; FONT-FAMILY: Arial, Helvetica, Geneva, sans-serif
+	    }
+	    H1 {
+		FONT-WEIGHT: bold; FONT-SIZE: 16pt; COLOR: #6d9ec6;
+	    }
+	    H2 {
+		FONT-WEIGHT: bold; FONT-SIZE: 16pt; COLOR: #000000;
+	    }
+	    H3 {
+		FONT-WEIGHT: bold; FONT-SIZE: 13pt; COLOR: #6d9ec6;
+	    }
+	    H4 {
+		FONT-WEIGHT: bold; FONT-SIZE: 13px; COLOR: #000000;
+	    }
+	    H5 {
+		FONT-WEIGHT: bold; FONT-SIZE: 10pt; COLOR: #6d9ec6;
+	    }
+	    H6 {
+		FONT-WEIGHT: bold; FONT-SIZE: 10pt; COLOR: #000000
+	    }
+
+	    </style>
+</head>
+<body bgcolor="white">
+<center>
+<style>
+div.project_name {
+  font-size: 150%;
+  color: black;
+  font-weight: bold;
+  border-top: solid #6d9ec6 5px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 5px;
+}
+div.page_links {
+  background: #6d9ec6;
+  text-align: center;
+}
+</style>
+<center>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td bgcolor="#dddddd">
+<div class="project_name">Untitled Gantt Project</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class="page_links">
+<a href="ProgramareActivitati.html"></a>
+          <a href="ProgramareActivitati-chart.html">Gantt</a> |
+          <a href="ProgramareActivitati-tasks.html">Tasks</a>
+</div>
+</td>
+</tr>
+</table>
+</center>
+<br>
+<style>
+td.header {
+  background: #dddddd;
+  margin: 0;
+  padding-left: 3px;
+  padding-right: 3px;
+  padding-top: 2px;
+  padding-bottom:1px;
+  border-bottom: solid black 2px;
+}
+td.cell {
+  margin: 0;
+  margin-top: 2px;
+  padding-left: 3px;
+  padding-right: 3px;
+  padding-top: 2px;
+  padding-bottom:1px;
+}
+div.cell {
+}
+h5.header {
+  margin-left: 2px;
+  margin-top: 2px;
+}
+</style>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top" class="header">
+<h5 class="header">Name</h5>
+</td><td valign="top" class="header">
+<h5 class="header">Begin date</h5>
+</td><td valign="top" class="header">
+<h5 class="header">End date</h5>
+</td><td valign="top" class="header">
+<h5 class="header">Resources</h5>
+</td>
+</tr>
+<tr>
+<td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0em">
+<div style="margin: 0; padding: 0;">Analiză Proiect</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">1/7/19</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">1/11/19</div>
+</div>
+</td><td valign="top" class="cell"></td>
+</tr>
+<tr>
+<td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">Definire arie de specificatii</div>
+<div class="notes">
+<pre width="40">Beneficiarii aplicatiei:
+ - psihoterapeut
+ - clienti / consiliati
+Alegerea Interfetei grafice (webapp template)
+Stabilirea schemei bazei de date (MySQL)
+Interfetele pentru introducere date
+ - formulare HTML prelucrate cu PHP
+ - prelucrarea acestora (jquery validator + PHP) 
+Analiza modului in care sunt extrase datele si afisate:
+ - pentru psihoterapeut
+ - pentru client / consiliat
+Alegerea librariei pentru generarea diagramelor (Chart.JS)
+</pre>
+</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">1/7/19</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">1/9/19</div>
+</div>
+</td><td valign="top" class="cell"></td>
+</tr>
+<tr>
+<td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">Invatare Chart.JS</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">1/10/19</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">1/11/19</div>
+</div>
+</td><td valign="top" class="cell"></td>
+</tr>
+<tr>
+<td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0em">
+<div style="margin: 0; padding: 0;">Activitate GUI</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">1/14/19</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">1/23/19</div>
+</div>
+</td><td valign="top" class="cell"></td>
+</tr>
+<tr>
+<td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">Adaptarea template-ului HTML</div>
+<div class="notes">
+<pre width="40">Pagini
+ - Home
+ - Administrare
+ - Users
+Formulare
+ - Chestionare
+ - Jurnalizare activitati user / consiliat</pre>
+</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">1/14/19</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">1/18/19</div>
+</div>
+</td><td valign="top" class="cell"></td>
+</tr>
+<tr>
+<td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">Creare Baza de Date</div>
+<div class="notes">
+<pre width="40">Configurare Schema DB MySQL
+ - tabele si coloane (caracteristici)
+ - tipurile atributelor si relatiile dintre tabele
+ - introducere date brute</pre>
+</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">1/21/19</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">1/23/19</div>
+</div>
+</td><td valign="top" class="cell"></td>
+</tr>
+<tr>
+<td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0em">
+<div style="margin: 0; padding: 0;">Scripting / MySQL</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">1/24/19</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">2/8/19</div>
+</div>
+</td><td valign="top" class="cell"></td>
+</tr>
+<tr>
+<td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">Create php includes, navigations, template pages</div>
+<div class="notes">
+<pre width="40">- Separate blocks of HTML code
+- Create php template pages
+- create URI navigation</pre>
+</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">1/24/19</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">1/29/19</div>
+</div>
+</td><td valign="top" class="cell"></td>
+</tr>
+<tr>
+<td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">Data Insert Interfaces</div>
+<div class="notes">
+<pre width="40">- Creat interfetele pentru introducerea in baza de date a:
+   - consiliatilor / userilor
+   - completare chestionar si insert in baza de date a rezultatelor
+   - interfata inserare monitorizare activitate tema de casa</pre>
+</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">1/30/19</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">2/8/19</div>
+</div>
+</td><td valign="top" class="cell"></td>
+</tr>
+<tr>
+<td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0em">
+<div style="margin: 0; padding: 0;">Result Data: Scripts and Bussines Logic</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">2/11/19</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">2/22/19</div>
+</div>
+</td><td valign="top" class="cell"></td>
+</tr>
+<tr>
+<td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">Pages for results</div>
+<div class="notes">
+<pre width="40">- Chestionar
+- Tema de Casa</pre>
+</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">2/11/19</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">2/18/19</div>
+</div>
+</td><td valign="top" class="cell"></td>
+</tr>
+<tr>
+<td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">Computation and Testing</div>
+<div class="notes">
+<pre width="40">- PHP scripts to extract data from MySQL and computation (percentage, addition);
+- Chart.JS for data representation</pre>
+</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">2/13/19</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">2/22/19</div>
+</div>
+</td><td valign="top" class="cell"></td>
+</tr>
+<tr>
+<td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0em">
+<div style="margin: 0; padding: 0;">Fix-Retest-Delivering</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">2/25/19</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">3/11/19</div>
+</div>
+</td><td valign="top" class="cell"></td>
+</tr>
+<tr>
+<td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">Fix Problems</div>
+<div class="notes">
+<pre width="40">- Fix all computation
+- Fix graphic data result</pre>
+</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">2/25/19</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">3/1/19</div>
+</div>
+</td><td valign="top" class="cell"></td>
+</tr>
+<tr>
+<td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">Re-Test :: Re-Fix</div>
+<div class="notes">
+<pre width="40">- Check al fixes
+- Make tests</pre>
+</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">3/4/19</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">3/8/19</div>
+</div>
+</td><td valign="top" class="cell"></td>
+</tr>
+<tr>
+<td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">Delivering</div>
+<div class="notes">
+<pre width="40">- Finally... delivering.</pre>
+</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">3/11/19</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">3/11/19</div>
+</div>
+</td><td valign="top" class="cell"></td>
+</tr>
+</table>
+</center>
+<br>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td bgcolor="#6d9ec6" width="50%"><font color="#FFFFFF"><b>Ganttproject (2.8.10 Pilsen (build 2363))</b></font></td><td bgcolor="#6d9ec6" width="50%" align="right"><b><a href="http://ganttproject.biz">ganttproject.biz</a></b>
+<br>
+<b>6/24/19 - 11:10:35 AM</b></td>
+</tr>
+</table>
+</body>
+</html>
